@@ -66,7 +66,7 @@ p "ruby"[1]
 
 p "hello,ruby,world".split(',')
 
-=end
+
 
 #1.
 puts "初めてのRuby"
@@ -114,3 +114,86 @@ plus_one(4)
 plus_one(10)
 
 #*問題文のp plus_ruby("like")で実行すると同じ値が２つ出てくる
+
+
+
+num = 4
+
+if num == 3
+  p 'numは3です。'
+
+elsif num == 4
+  p 'numは4です。'
+
+else
+  p 'numは3でも4でもないです。'
+end
+
+p 3 > 0
+p 3 < 3
+
+if true
+  p '条件式は正しいです。'
+end
+
+
+for num in 1..4 do
+  p num
+end
+
+
+[1,2,3,4].each do |num|
+  p num
+end
+
+num = 0
+while num <5 do
+  p num
+  num += 1
+end
+
+#1.
+n = 3
+if n == 3
+  p 'nは3です'
+end
+
+#2.
+n = 3
+
+if n = 3 || n = 4
+  p '3,4のどちらかです'
+end
+
+#3.
+n = 3
+
+if n == 3
+  p 'nは３です'
+elsif n == 4
+  p 'nは４です'
+end
+
+#4.
+
+for n in 1..4 do
+  p 'こんにちは'
+end
+
+#5.
+[1,2,3,4,5].each do |i|
+  p i
+end
+
+#6.
+i = 4
+
+if i == 2
+  p '2です'
+elsif i == 3
+  p '3です'
+else
+  p 'それ以外です'
+end
+
+=end
