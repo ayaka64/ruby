@@ -102,11 +102,11 @@ animal = Animal.new
 animal.name = 'サル'
 p animal.name
 
-# クラスの承継
-class Animal
+# クラスの承継 クラスから新しいクラスを作成する
+class Animal # クラス名の設定
 end
 
-class Dog < Animal # クラス名 < 承継したいクラス名
+class Dog < Animal # クラス名 < 承継したいクラス名 DogはAnimalを承継する
 end
 
 class Animal
@@ -134,6 +134,4 @@ end
 
 Dog.greet
 Dog.bow
-
-
 
