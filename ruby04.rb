@@ -1,6 +1,6 @@
 # テキストruby04　課題
 
-# 1.~4.
+# 1~4
 class People
   def initialize
     p 'Peopleのインスタンスが作られました。'
@@ -9,31 +9,19 @@ class People
   def self.msg
     p '私はPeopleクラスです。'
   end
+
+  attr_accessor :name
+
 end
 
 People.msg
-
-class People
-  def name=(value)
-    @name = value
-  end
-  
-  def name
-    @name 
-  end
-    
-end
-
-class People
-  attr_accessor :name
-end
 
 people = People.new
 people.name = "ayaka"
 p people.name
 
   
-# 5.~6.
+# 5~6
 class People
   def self.msg
     p "私は目からビームが出せます"
